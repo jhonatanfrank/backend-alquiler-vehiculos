@@ -1,5 +1,6 @@
 package com.alquilervehiculos.controller;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.alquilervehiculos.model.Alquiler;
 import com.alquilervehiculos.model.Cliente;
@@ -66,16 +69,22 @@ public class AlquilerController {
 		try {
 			alquileresEncontrado.setNombres(alquiler.getNombres());
 			alquileresEncontrado.setApellidos(alquiler.getApellidos());
+			alquileresEncontrado.setDni(alquiler.getDni());
 			alquileresEncontrado.setEmail(alquiler.getEmail());
 			alquileresEncontrado.setPais(alquiler.getPais());
+			alquileresEncontrado.setDepartamento(alquiler.getDepartamento());
 			alquileresEncontrado.setDireccion(alquiler.getDireccion());
+			alquileresEncontrado.setDistrito(alquiler.getDistrito());
 			alquileresEncontrado.setTelefono1(alquiler.getTelefono1());
 			alquileresEncontrado.setTelefono2(alquiler.getTelefono2());
+			alquileresEncontrado.setFechasolicitud(alquiler.getFechasolicitud());
 			alquileresEncontrado.setFechainicio(alquiler.getFechainicio());
 			alquileresEncontrado.setFechafin(alquiler.getFechafin());
 			alquileresEncontrado.setLugarrecojo(alquiler.getLugarrecojo());
 			alquileresEncontrado.setLugardevolucion(alquiler.getLugardevolucion());
+			alquileresEncontrado.setComentarios(alquiler.getComentarios());
 			alquileresEncontrado.setPreciofinal(alquiler.getPreciofinal());
+			alquileresEncontrado.setDiasalquiler(alquiler.getDiasalquiler());
 			alquileresEncontrado.setVehiculo(alquiler.getVehiculo());
 
 			// alquileresEncontrado.getVehiculo().setId(alquiler.getVehiculo().getId());
