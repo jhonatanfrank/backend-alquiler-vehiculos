@@ -18,7 +18,6 @@ import com.alquilervehiculos.model.Vehiculo;
 import com.alquilervehiculos.service.VehiculoService;
 
 @RestController
-@CrossOrigin(origins = {"*"})
 @RequestMapping("/alquilervehiculos/api/")
 public class VehiculoController {
 

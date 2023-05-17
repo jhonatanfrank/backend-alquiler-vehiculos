@@ -35,7 +35,7 @@ public class Vehiculo implements Serializable {
 	private String modelo;
 	private Integer anio;
 	private Double precio;
-	private Boolean estado;
+	private Integer estado;
 	private String foto;
 	private String descripcion;
 	//private String combustible;
@@ -60,6 +60,11 @@ public class Vehiculo implements Serializable {
 	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 	@JoinColumn(name = "idtapizadoasientos")
 	private Tapizadoasientos tapizadoasientos;
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
+	@JoinColumn(name = "idtipocarro")
+	private Tipocarro tipocarro;
 	/**
 	 * 
 	 */

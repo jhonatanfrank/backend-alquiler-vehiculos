@@ -48,7 +48,7 @@ public class Alquiler {
 	private String lugarrecojo;
 	private String lugardevolucion;
 	private String comentarios;
-	private String preciofinal;
+	private Double preciofinal;
 	private Integer diasalquiler;
 	
 	@ManyToOne(fetch = FetchType.LAZY)

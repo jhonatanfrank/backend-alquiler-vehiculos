@@ -20,12 +20,15 @@ import lombok.Setter;
 @Entity
 @Table(name = "tipocarro")
 public class Tipocarro implements Serializable{
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String tipocarro;
+	
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 }
