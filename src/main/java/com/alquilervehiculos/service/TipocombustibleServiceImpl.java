@@ -10,7 +10,7 @@ import com.alquilervehiculos.model.Marca;
 import com.alquilervehiculos.model.Tipocombustible;
 
 @Service
-public class TipocombustibleServiceImpl implements TipocombustibleService{
+public class TipocombustibleServiceImpl implements TipocombustibleService {
 
 	@Autowired
 	private TipocombustibleDao tipocombustibleDao;
@@ -34,14 +34,11 @@ public class TipocombustibleServiceImpl implements TipocombustibleService{
 	@Override
 	public void delete(Integer id) {
 		tipocombustibleDao.deleteById(id);
-		
 	}
 
 	@Override
 	public List<Tipocombustible> findByVehiculoId(Integer id) {
 		return (List<Tipocombustible>) tipocombustibleDao.findById(id).orElse(null);
 	}
-	
-
 
 }

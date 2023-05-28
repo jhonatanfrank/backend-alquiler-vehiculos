@@ -86,6 +86,7 @@ public class AlquilerController {
 			alquileresEncontrado.setPreciofinal(alquiler.getPreciofinal());
 			alquileresEncontrado.setDiasalquiler(alquiler.getDiasalquiler());
 			alquileresEncontrado.setVehiculo(alquiler.getVehiculo());
+			//alquileresEncontrado.setAdicional(alquiler.getAdicional());
 
 			// alquileresEncontrado.getVehiculo().setId(alquiler.getVehiculo().getId());
 

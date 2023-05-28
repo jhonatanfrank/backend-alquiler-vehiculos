@@ -56,4 +56,10 @@ public class Alquiler {
 	@JoinColumn(name = "idvehiculo")
 	private Vehiculo vehiculo;
 	
+	/*
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
+	@JoinColumn(name = "idadicional")
+	private Adicional adicional;
+	*/
 }
