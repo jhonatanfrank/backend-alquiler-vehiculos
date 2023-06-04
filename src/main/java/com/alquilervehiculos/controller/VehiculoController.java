@@ -68,6 +68,7 @@ public class VehiculoController {
 	    return vehiculoService.save(vehiculoActual);
 	}	
 	
+	/*prueba*/	
 	
 	@DeleteMapping("/vehiculos/{id}")
 	public void delete(@PathVariable Integer id) {
