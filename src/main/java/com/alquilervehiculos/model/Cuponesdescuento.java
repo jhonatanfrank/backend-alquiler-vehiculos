@@ -33,5 +33,5 @@ public class Cuponesdescuento {
 	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 	@JoinColumn(name = "idvehiculo")
 	private Vehiculo vehiculo;
-
+	//comentario
 }
