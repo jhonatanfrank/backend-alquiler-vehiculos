@@ -52,6 +52,8 @@ public class AlquilerController {
 	public ResponseEntity<Alquiler> crearAlquileres(@RequestBody Alquiler alquiler) {
 		return new ResponseEntity<>(alquilerService.save(alquiler), HttpStatus.OK);
 	}
+	
+	/**/
 
 	@GetMapping("/alquileres/{id}")
 	public Alquiler mostrarCliente(@PathVariable Integer id) {
