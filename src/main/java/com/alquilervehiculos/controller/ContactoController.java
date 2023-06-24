@@ -49,6 +49,7 @@ public class ContactoController {
 		contactoActual.setEmail(contacto.getEmail());
 		contactoActual.setCelular(contacto.getCelular());
 		contactoActual.setComentarios(contacto.getComentarios());
+		contactoActual.setEstadoatencion(contacto.getEstadoatencion());
 
 		return contactoService.save(contactoActual);
 	}

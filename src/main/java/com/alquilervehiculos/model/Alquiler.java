@@ -32,6 +32,7 @@ public class Alquiler {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+	private Integer codigoalquiler;
 	private String nombres;
 	private String apellidos;
 	private Integer dni;
@@ -55,6 +56,12 @@ public class Alquiler {
 	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 	@JoinColumn(name = "idvehiculo")
 	private Vehiculo vehiculo;
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
+	@JoinColumn(name = "idestadoatencion")
+	private Estadoatencion estadoatencion;
+	
 	
 	/*
 	@ManyToOne(fetch = FetchType.LAZY)

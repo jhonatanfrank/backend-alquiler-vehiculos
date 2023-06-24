@@ -69,6 +69,7 @@ public class AlquilerController {
 		}
 
 		try {
+			alquileresEncontrado.setCodigoalquiler(alquiler.getCodigoalquiler());
 			alquileresEncontrado.setNombres(alquiler.getNombres());
 			alquileresEncontrado.setApellidos(alquiler.getApellidos());
 			alquileresEncontrado.setDni(alquiler.getDni());
@@ -88,6 +89,8 @@ public class AlquilerController {
 			alquileresEncontrado.setPreciofinal(alquiler.getPreciofinal());
 			alquileresEncontrado.setDiasalquiler(alquiler.getDiasalquiler());
 			alquileresEncontrado.setVehiculo(alquiler.getVehiculo());
+			alquileresEncontrado.setEstadoatencion(alquiler.getEstadoatencion());
+
 			//alquileresEncontrado.setAdicional(alquiler.getAdicional());
 
 			// alquileresEncontrado.getVehiculo().setId(alquiler.getVehiculo().getId());
